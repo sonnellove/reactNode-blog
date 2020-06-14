@@ -4,7 +4,9 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 
+const dotenv = require("dotenv");
 const config = require("./config/key");
+dotenv.config();
 
 const { User } = require("./models/user");
 const { auth } = require("./middleware/auth");
